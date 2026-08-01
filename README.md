@@ -42,13 +42,15 @@ univer open synthetic-chart-scroll-lag.univer --unit u-msa1sjmf-7yp544
 
 ## Observed result
 
-In one 12-scroll sample, Viewer input completion times were:
+After a fresh clone, one 30-scroll down/up sample produced these Viewer input completion times:
 
 ```text
-16, 40, 8, 18, 325, 6, 217, 35, 332, 30, 314, 6 ms
+44, 101, 610, 53, 699, 51, 824, 71, 794, 58,
+718, 47, 644, 57, 677, 49, 595, 48, 657, 11,
+371, 10, 378, 10, 365, 47, 553, 38, 9, 23 ms
 ```
 
-Four of the 12 scroll operations took more than 200 ms. The stalls are visible during ordinary trackpad or mouse-wheel scrolling.
+Fourteen of the 30 scroll operations took at least 100 ms, the slowest took 824 ms, and the average was approximately 287 ms. The stalls are visible during ordinary trackpad or mouse-wheel scrolling.
 
 ## Expected result
 
